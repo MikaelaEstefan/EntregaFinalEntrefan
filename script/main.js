@@ -1,4 +1,5 @@
 
+
 const emailInput = document.getElementById("email-input");
 const emailRegex = /^\S+@\S+\.\S+$/; 
 

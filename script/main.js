@@ -1,4 +1,9 @@
-
+var startBtn = document.getElementById("start-button");
+startBtn.addEventListener("click", function() {
+  for (var i = 0; i < 3; i++) {
+    alert("Please press start to begin!");
+  }
+});
 
 const emailInput = document.getElementById("email-input");
 const emailRegex = /^\S+@\S+\.\S+$/; 

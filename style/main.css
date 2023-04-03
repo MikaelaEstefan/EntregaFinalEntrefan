@@ -55,28 +55,6 @@
 .nav-link:hover {
     color: #DDE5B6;
 }
-.capa1{
-    width:100%;
-    height:100vh;
-    line-height:100vh;
-    background-color:#ADC178;
-    text-align:center;
-    color: #F0EAD2;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 10px;
-    font-size: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.obiwanImg {
-    width: auto;
-    height: 17%;
-    align-self: center;
-    position: relative;
-    animation: rotate-animation 2s ease-in-out infinite;
-}
 
 @keyframes rotate-animation {
   0% {
@@ -93,18 +71,18 @@
 .capa2{
     width:100%;
     height:100vh;
-    background-color:#F0EAD2;
+    background-color:#ADC178;
     text-align:center;
-    color: #A98467;
+    color: #F0EAD2;
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
-    font-size: 65px;
+    font-size: 120px;
     display: flex;
     flex-direction:column;
     justify-content:center;
 }
  
-.capa3{
+.capa3 {
     width:100%;
     height:100vh;
     background-color: #A98467;
@@ -195,18 +173,18 @@
 }
 .anaobi1 {
     width: auto;
-    height: 30%;
+    height: 40%;
     align-self: center;
-    margin-left: 850px;
+    margin-left: 1050px;
     position: absolute;
     animation: rotate-animation 2s ease-in-out infinite;
 }
 
 .anaobi2 {
     width: auto;
-    height: 33%;
+    height: 44%;
     align-content: center;
-    margin-left: 350px;
+    margin-left: 130px;
     position: absolute;
     animation: rotate-animation 2s ease-in-out infinite;
 }
@@ -215,16 +193,16 @@
     width:100%;
     height:100vh;
     background-color: #6C584C;
-    text-align:start;
+    text-align:center;
     color: #ADC178;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5px;
-    font-size: 60px;
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 .flex-container {
@@ -291,16 +269,76 @@
     background-color: #ADC178;
     text-align:start;
     color: #F0EAD2;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5px;
-    font-size: 60px;
+    font-family: 'Cousine', monospace;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    line-height: 70px;
+    line-height: 60px;
 }
 
-/* .yodaMaster {
-    width: 30px;
-} */
+.capa7{
+    width:100%;
+    height:100vh;
+    background-color: #A98467;
+    text-align:center;
+    color: #6C584C;
+    font-family: 'Cousine', monospace;
+    letter-spacing: 5px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    line-height: 60px;
+}
+
+.capa8{
+    width:100%;
+    height:100vh;
+    background-color: #F0EAD2;
+    text-align:center;
+    color: #6C584C;
+    font-family: 'Cousine', monospace;
+    letter-spacing: 5px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    line-height: 60px;
+}
+
+.capa9 {
+    width:100%;
+    height:100vh;
+    background-color: #DDE5B6;
+    text-align:center;
+    color: #ADC178;
+    font-family: 'Cousine', monospace;
+    letter-spacing: 5px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    line-height: 60px;
+}
+
+.capa10 {
+    width:100%;
+    height:100vh;
+    background-color: #A98467;
+    text-align:center;
+    color: #ADC178;
+    font-family: 'Cousine', monospace;
+    letter-spacing: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    line-height: 60px;
+}
+

@@ -9,7 +9,7 @@
     <!-- fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@600&family=Cousine&display=swap" rel="stylesheet">
     <title>Find your Jedi Master</title>
 </head>
 <body>
@@ -23,15 +23,11 @@
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-        <div id="capa1" class="capa1">
-            <img src="img/obiwan.png" alt="Obi-wan Kenobi" class="obiwanImg">
-            <p>HELLO THERE</p>
-        </div>
         <div id="capa1" class="capa2">
             <div class="mastersImg">
                 <img src="img/anakinPose.png" alt="Anakin Skywalker" class="anaobi1"><img src="img/obiwanPose.png" alt="Obi-wan Kenobi" class="anaobi2">
             </div>
-            <p>Welcome to <br> Find your Jedi Master</p>
+            <p>Star Wars Quiz</p>
         </div>
         <div id="capa2" class="capa3">
             <p>Accept the challenge, you may</p>
@@ -50,80 +46,57 @@
                 <input class="retro-button" type="submit" value="Submit">
             </form>
         </div>
-        <div id="capa1" class="capa5">
-            <p>Pick your favorite color</p>
-            <div class="flex-container">
-                <div class="square blue">Blue</div>
-                <div class="square green">Green</div>
-                <div class="square purple">Purple</div>
-                <div class="square red">Red</div>
-            </div>
-        </div>
-        <div id="capa1" class="capa6">
-            <p>Favorite Planet</p>
-            <div class="flex-container">
-                <img src="img/dagobah.png" alt="dagobah planet">
-                <img src="img/naboo.jpg" alt="naboo planet">
-                <img src="img/coruscant.jpg" alt="coruscant planet">
-                <img src="img/tattoine.png" alt="tattoine planet">
-            </div>
-        </div>
-        <div id="capa1" class="capa2">
-            <p>Your Master would be:</p>
-            <div class="flex-container">
-                <img class="yodaMaster" src="img/yodaMaster.jpg" alt="tattoine planet">
-            </div>
-        </div>
-        <div id="question1">
+        <div id="question1" class="capa5">
             <h2>In which Star Wars film does Yoda have a lightsaber duel with Count Dooku?</h2>
             <input type="radio" name="q1" value="a"> a) Attack of The Clones<br>
             <input type="radio" name="q1" value="b"> b) The Phantom Menace<br>
             <input type="radio" name="q1" value="c"> c) Return of the Jedi<br>
             <input type="radio" name="q1" value="d"> d) The Empire Strikes Back<br>
         </div>
-        <div id="question2">
+        </div>
+        <div id="question2" class="capa6">
             <h2>C-3P0 is fluent in how many languages?</h2>
             <input type="radio" name="q2" value="a"> a) 2<br>
             <input type="radio" name="q2" value="b"> b) Over 60 million<br>
             <input type="radio" name="q2" value="c"> c) Over 2 million<br>
             <input type="radio" name="q2" value="d"> d) 10<br>
         </div>
-        <div id="question3">
+        <div id="question3" class="capa7">
             <h2>Who is the captain of the modified patrol and attack craft known as Slave 1?</h2>
             <input type="radio" name="q3" value="a"> a) Popin Jay<br>
             <input type="radio" name="q3" value="b"> b) Han Solo<br>
             <input type="radio" name="q3" value="c"> c) Boba Fett<br>
             <input type="radio" name="q3" value="d"> d) Din Djarin<br>
         </div>
-        <div id="question4">
+        <div id="question4" class="capa8">
             <h2>How old is Yoda when he dies?</h2>
             <input type="radio" name="q4" value="a"> a) 700 years old<br>
             <input type="radio" name="q4" value="b"> b) 800 years old<br>
             <input type="radio" name="q4" value="c"> c) 900 years old<br>
             <input type="radio" name="q4" value="d"> d) 1000 years old<br>
         </div>
-        <div id="question5">
+        <div id="question5" class="capa9">
             <h2>Who built C-3P0?</h2>
             <input type="radio" name="q5" value="a"> a) Anakin Skywalker<br>
             <input type="radio" name="q5" value="b"> b) Luke Skywalker<br>
             <input type="radio" name="q5" value="c"> c) Obi-wan Kenobi<br>
             <input type="radio" name="q5" value="d"> d) Han Solo<br>
         </div>
-        <div id="question6">
+        <div id="question6" class="capa10">
             <h2>Luke's Uncle Owen runs what sort of business?</h2>
             <input type="radio" name="q6" value="a"> a) Moisture Farm<br>
             <input type="radio" name="q6" value="b"> b) Space cafe<br>
             <input type="radio" name="q6" value="c"> c) Pet shop<br>
             <input type="radio" name="q6" value="d"> d) Speeder repair store<br>
         </div>
-        <div id="question7">
+        <div id="question7" class="capa5">
             <h2>Who is Han Solo's old friend who greets him when he lands in Cloud City?</h2>
             <input type="radio" name="q7" value="a"> a) Chewbacca<br>
             <input type="radio" name="q7" value="b"> b) Lando Calrissian<br>
             <input type="radio" name="q7" value="c"> c) Porkis<br>
             <input type="radio" name="q7" value="d"> d) Greedo<br>
+            <button onclick="submitQuiz()" class="retro-button">Submit</button>
         </div>
-        <button onclick="submitQuiz()">Submit</button>
     </div>
     <script src="script/main.js"></script>
 </body>

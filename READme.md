@@ -4,9 +4,8 @@ Este es un proyecto de un quiz de Star Wars. Los usuarios pueden responder pregu
 
 CÓMO FUNCIONA EL QUIZ
 
-El quiz tiene 7 preguntas y cada pregunta tiene 3 opciones de respuesta. El usuario debe seleccionar una respuesta para cada pregunta antes de hacer clic en el botón "Submit". Si no se ha ingresado una dirección de correo electrónico válida, se le pedirá al usuario que la ingrese antes de que se calcule la puntuación.
-
-Después de que el usuario haya seleccionado una respuesta para cada pregunta y haya ingresado una dirección de correo electrónico válida, debe hacer clic en el botón "Submit". Entonces se calculará la puntuación del usuario y se mostrará en una alerta.
+El quiz tiene 7 preguntas con 3 opciones de respuesta. El usuario debe seleccionar una respuesta para cada pregunta antes de clickear en el botón "Submit". Si no se ha ingresado una dirección de correo electrónico válida, se le pedirá al usuario que la ingrese.
+Luego de completado el quiz, se calculará la puntuación del usuario y se mostrará en una alerta. 
 
 JAVASCRIPT
 

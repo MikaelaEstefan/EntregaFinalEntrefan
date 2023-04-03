@@ -105,7 +105,8 @@ function checkAnswer(question, answer) {
   return score;
 }
 
-function submitQuiz(score) {
+let score = 0;
+function submitQuiz() {
   let score1 = checkAnswer("q1", document.querySelector('input[name="q1"]:checked').value);
   let score2 = checkAnswer("q2", document.querySelector('input[name="q2"]:checked').value);
   let totalScore = score1 + score2;

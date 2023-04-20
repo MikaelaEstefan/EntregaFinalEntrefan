@@ -55,7 +55,14 @@ function showExpenseReport() {
     alert(report);
 }
 
-// filtrar datos por fecha
+// filtrar datos por fecha // //
+
+//1ro chequear que existan gastos disponibles.
+//2do se solicita que el usuario ingrese fecha que desea filtrar
+//3ro se usa .filter() en el array expenses para filtrar todos los gastos que tienen la fecha ingresada por el usuario.
+//4to creación de reporte. Si no existe se muestra mensaje correspondiente, de lo contrario se muestra la categoría y el monto. 
+
+
 function filterExpensesByDate() {
     if (expenses.length === 0) {
         alert('No expenses available. Please add an expense first.');

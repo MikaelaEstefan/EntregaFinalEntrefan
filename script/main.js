@@ -68,7 +68,7 @@ function showExpenseReport() {
 }
 
 // filtrar datos por fecha // 
-
+//------------------------//
 //1ro chequear que existan gastos disponibles.
 //2do se solicita que el usuario ingrese fecha que desea filtrar
 //3ro se usa .filter() en el array expenses para filtrar todos los gastos que tienen la fecha ingresada por el usuario.

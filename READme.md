@@ -1,18 +1,37 @@
-STAR WARS QUIZ
+## Expense Tracker
 
-Este es un proyecto de un quiz de Star Wars. Los usuarios pueden responder preguntas sobre la franquicia de Star Wars y recibir una puntuación al final.
+El objetivo de es poder generar reportes de gastos, pudiendo generar categorías y filtrar por fecha. 
+Las funcionalidad actuales son las siguientes:
 
-CÓMO FUNCIONA EL QUIZ
+-Añadir nueva categoría
+This is a simple JavaScript application that allows users to track their expenses by category and date. It provides the following functionality:
 
-El quiz tiene 7 preguntas con 3 opciones de respuesta. El usuario debe seleccionar una respuesta para cada pregunta antes de clickear en el botón "Submit". Si no se ha ingresado una dirección de correo electrónico válida, se le pedirá al usuario que la ingrese.
-Luego de completado el quiz, se calculará la puntuación del usuario y se mostrará en una alerta. 
+- Añadir nueva categoría
+- Añadir gastos a esa categoría
+- Mostrar gasto por categoría
+- Filtrar gastos por fecha. 
 
-JAVASCRIPT
+### Cómo usarlo
 
-Importante: al ser clickeado el botón de inicio muestra una alerta tres veces advirtiendo al usuario presionar al botón. No resolví como hacer que funcione de la manera contraria.  
+- El prompt inicial muestra un menú general con opciones para acceder a las funcionalidades:
 
-A continuación, se valida la dirección de correo electrónico del usuario. Si la dirección de correo electrónico ingresada no cumple con el formato de la expresión regular, se muestra una alerta pidiendo al usuario que ingrese una dirección de correo válida. 
+1. Add Category
+2. Add Expense
+3. Show Expense Report
+4. Filter Expenses by Date
+5. Exit
 
-Finalmente, se definen dos funciones importantes para el quiz: checkAnswer y submitQuiz. checkAnswer toma como argumentos una pregunta y una respuesta, y devuelve una puntuación de 1 si la respuesta es correcta y 0 si no lo es. submitQuiz llama a checkAnswer para cada una de las 7 preguntas y suma las puntuaciones para obtener la puntuación total del usuario. Luego muestra la puntuación en una alerta. 
+Siguiendo las opciones en el orden que figura es posible: agregar nueva categoría, agregarle un gasto, mostrar el reporte y filtrar gastos por fecha. 
 
-May the force be with you!
+### Código
+
+Consiste de las siguientes funciones:
+
+- `addCategory()`: Agrega una nueva categoría a la lista. 
+- `addExpense()`: Agrega un nuevo gasto. 
+- `showExpenseReport()`: Muestra reporte por categoría. 
+- `filterExpensesByDate()`: Filtra gastos por fecha. 
+
+Estas funciones son llamadas desde la función `showMainMenu()` que muestra el menú y permite al usuario navegar las opciones disponibles. 
+
+La lista de categorías y los gastos se guardan en 2 arrays diferentes: `categories` y `expenses`.

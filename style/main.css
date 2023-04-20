@@ -17,7 +17,7 @@ input, select, button {
     padding: 0;
     margin: 30px;
 }
-/* Reset some default styles */
+
 body,
 h1,
 h2,
@@ -67,21 +67,21 @@ li {
     padding: 20px;
 } */
 
-/* Example styles for cute buttons */
+
 .button {
-    background-color: #e4a4d4; /* Background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Add rounded corners */
-    font-family: 'Arial', sans-serif; /* Font family */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Add cursor pointer on hover */
-    transition: background-color 0.3s ease-in-out; /* Add smooth transition effect */
+    background-color: #e4a4d4; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
 }
 
 .button:hover {
-    background-color: #d370a1; /* Change background color on hover */
+    background-color: #d370a1; 
 }
 
 
@@ -132,19 +132,19 @@ h2 {
     margin: 8px;
 }
 
-/* Example styles for cute input boxes */
+
 .input-box {
-    background-color: #f7e3f0; /* Background color */
-    color: #9d549f; /* Text color */
-    padding: 10px; /* Padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Add rounded corners */
-    font-family: 'Arial', sans-serif; /* Font family */
-    font-size: 16px; /* Font size */
-    margin-bottom: 10px; /* Add margin at the bottom */
+    background-color: #f7e3f0; 
+    color: #9d549f; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    margin-bottom: 10px; 
 }
 
 .input-box:focus {
-    outline: none; /* Remove focus outline */
-    box-shadow: 0 0 5px #d370a1; /* Add shadow effect on focus */
+    outline: none; 
+    box-shadow: 0 0 5px #d370a1; 
 }

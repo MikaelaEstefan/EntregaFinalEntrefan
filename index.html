@@ -1,103 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="style/main.css">
-    <!-- fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@600&family=Cousine&display=swap" rel="stylesheet">
-    <title>Find your Jedi Master</title>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="contenedor">
-        <nav class="navbar">
-            <a href="#" class="navbar-brand"> <img src="img/Star_Wars_Logo..png" alt="star wars logo"></a>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="capa1" class="capa2">
-            <div class="mastersImg">
-                <img src="img/anakinPose.png" alt="Anakin Skywalker" class="anaobi1"><img src="img/obiwanPose.png" alt="Obi-wan Kenobi" class="anaobi2">
-            </div>
-            <p>Star Wars Quiz</p>
-        </div>
-        <div id="capa2" class="capa3">
-            <p>Accept the challenge, you may</p>
-            <img src="img/yoda.png" alt="Yoda using the force" class="yodaImg">
-            <button id="start-button" class="retro-button">Start</button>
-        </div>
-        <div id="capa2" class="capa4">
-            <p class="capa4Title">First, your Jedi info</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"> <br>
-        
-                <label id="email-input" for="email">Email:</label>
-                <input type="email" id="email" name="email"> <br>
-        
-                <input class="retro-button" type="submit" value="Submit">
-            </form>
-        </div>
-        <div id="question1" class="capa5">
-            <h2>In which Star Wars film does Yoda have a lightsaber duel with Count Dooku?</h2>
-            <input type="radio" name="q1" value="a"> a) Attack of The Clones<br>
-            <input type="radio" name="q1" value="b"> b) The Phantom Menace<br>
-            <input type="radio" name="q1" value="c"> c) Return of the Jedi<br>
-            <input type="radio" name="q1" value="d"> d) The Empire Strikes Back<br>
-        </div>
-        </div>
-        <div id="question2" class="capa6">
-            <h2>C-3P0 is fluent in how many languages?</h2>
-            <input type="radio" name="q2" value="a"> a) 2<br>
-            <input type="radio" name="q2" value="b"> b) Over 60 million<br>
-            <input type="radio" name="q2" value="c"> c) Over 2 million<br>
-            <input type="radio" name="q2" value="d"> d) 10<br>
-        </div>
-        <div id="question3" class="capa7">
-            <h2>Who is the captain of the modified patrol and attack craft known as Slave 1?</h2>
-            <input type="radio" name="q3" value="a"> a) Popin Jay<br>
-            <input type="radio" name="q3" value="b"> b) Han Solo<br>
-            <input type="radio" name="q3" value="c"> c) Boba Fett<br>
-            <input type="radio" name="q3" value="d"> d) Din Djarin<br>
-        </div>
-        <div id="question4" class="capa8">
-            <h2>How old is Yoda when he dies?</h2>
-            <input type="radio" name="q4" value="a"> a) 700 years old<br>
-            <input type="radio" name="q4" value="b"> b) 800 years old<br>
-            <input type="radio" name="q4" value="c"> c) 900 years old<br>
-            <input type="radio" name="q4" value="d"> d) 1000 years old<br>
-        </div>
-        <div id="question5" class="capa9">
-            <h2>Who built C-3P0?</h2>
-            <input type="radio" name="q5" value="a"> a) Anakin Skywalker<br>
-            <input type="radio" name="q5" value="b"> b) Luke Skywalker<br>
-            <input type="radio" name="q5" value="c"> c) Obi-wan Kenobi<br>
-            <input type="radio" name="q5" value="d"> d) Han Solo<br>
-        </div>
-        <div id="question6" class="capa10">
-            <h2>Luke's Uncle Owen runs what sort of business?</h2>
-            <input type="radio" name="q6" value="a"> a) Moisture Farm<br>
-            <input type="radio" name="q6" value="b"> b) Space cafe<br>
-            <input type="radio" name="q6" value="c"> c) Pet shop<br>
-            <input type="radio" name="q6" value="d"> d) Speeder repair store<br>
-        </div>
-        <div id="question7" class="capa5">
-            <h2>Who is Han Solo's old friend who greets him when he lands in Cloud City?</h2>
-            <input type="radio" name="q7" value="a"> a) Chewbacca<br>
-            <input type="radio" name="q7" value="b"> b) Lando Calrissian<br>
-            <input type="radio" name="q7" value="c"> c) Porkis<br>
-            <input type="radio" name="q7" value="d"> d) Greedo<br>
-            <button onclick="submitQuiz()" class="retro-button">Submit</button>
-        </div>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Expense Tracker</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Expenses</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Report</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <h1 class="title">Expense Tracker</h1>
+    <div id="categories">
+        <h2>Categories</h2>
+        <ul id="categoryList">
+            <!-- Categories will be dynamically added here -->
+        </ul>
+        <form id="categoryForm">
+            <input type="text" id="categoryInput" class="input-box" placeholder="Enter category name">
+            <button type="submit" class="button">Add Category</button>
+        </form>
     </div>
-    <script src="script/main.js"></script>
+    <div id="expenses">
+        <h2>Expenses</h2>
+        <ul id="expenseList">
+            <!-- Expenses will be dynamically added here -->
+        </ul>
+        <form id="expenseForm">
+            <select id="categorySelect">
+                <!-- Categories will be dynamically added here as options -->
+            </select>
+            <input type="number" id="expenseInput" class="input-box" placeholder="Enter expense amount">
+            <button type="submit" class="button">Add Expense</button>
+        </form>
+    </div>
+    </div>
+    <footer class="footer">
+        <ul class="social-media-list">
+            <li class="social-media-item"><a href="#" class="social-media-link"><img src="./img/facebook-icon.png"
+                        alt="Facebook"></a></li>
+            <li class="social-media-item"><a href="#" class="social-media-link"><img src="./img/instagram-icon.png"
+                            alt="Instagram"></a></li>
+            <li class="social-media-item"><a href="#" class="social-media-link"><img src="./img/twitter-icon.png"
+                        alt="Twitter"></a></li>
+            <li class="social-media-item"><a href="#" class="social-media-link"><img src="./img/youtube-icon.png"
+                        alt="Youtube"></a></li>
+        </ul>
+        <p class="footer-text">&copy; 2023 Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

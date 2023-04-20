@@ -3,9 +3,6 @@
 El objetivo de es poder generar reportes de gastos, pudiendo generar categorías y filtrar por fecha. 
 Las funcionalidad actuales son las siguientes:
 
--Añadir nueva categoría
-This is a simple JavaScript application that allows users to track their expenses by category and date. It provides the following functionality:
-
 - Añadir nueva categoría
 - Añadir gastos a esa categoría
 - Mostrar gasto por categoría

@@ -5,9 +5,9 @@
 
 /* Variables */
 :root {
-  --primary-color: #f7a9a8;
-  --secondary-color: #bce6e5;
-  --tertiary-color: #fbffb9;
+  --primary-color: #ffb3c6;
+  --secondary-color: #d6ffc2;
+  --tertiary-color: #ffffb7;
   --text-color: #5d5d5d;
 }
 
@@ -94,6 +94,13 @@ body {
 #categories h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+#categoryForm label {
+  color: var(--primary-color);
+  margin-top: 9px;
 }
 
 #categoryList {
@@ -115,16 +122,6 @@ body {
   font-weight: 700;
 }
 
-.category-delete {
-  color: #b30000;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.category-delete:hover {
-  color: white;
-}
-
 #categoryForm {
   display: flex;
   margin-bottom: 20px;
@@ -139,7 +136,7 @@ body {
   font-size: 16px;
 }
 
-#categoryForm button {
+#categoryForm button, #expenseForm button, #reportButton {
   background-color: var(--primary-color);
   color: white;
   padding: 10px;
@@ -151,7 +148,15 @@ body {
 }
 
 #categoryForm button:hover {
-  background-color: #e36b6b;
+  background-color: #e36bb7;
+}
+
+#expenseForm button:hover {
+    background-color: #e36bb7;
+}
+
+#reportButton:hover {
+    background-color: #e36bb7;
 }
 
 /* Expenses */
@@ -159,7 +164,21 @@ body {
   background-color: var(--tertiary-color);
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
+
+#expenses h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#expenseForm label {
+    color: var(--primary-color);
+    margin-top: 9px;
+}
+
 
 .footer {
     background-color: var(--primary-color);

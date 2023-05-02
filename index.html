@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" type="text/css" href="./style/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/main.css">
+  </head>
+  <body>
     <nav class="navbar">
         <a href="#" class="navbar-logo">Expense Tracker</a>
         <ul class="navbar-nav">
@@ -14,32 +15,42 @@
             <li class="nav-item"><a href="#" class="nav-link">Report</a></li>
         </ul>
     </nav>
+
     <div class="container">
-    <h1 class="title">Expense Tracker</h1>
-    <div id="categories">
-        <h2>Categories</h2>
-        <ul id="categoryList">
-            
-        </ul>
+        <h1 class="title">Expense Tracker</h1>
+        <div id="categories">
+            <h2>Categories</h2>
+            <ul id="categoryList">
+
+            </ul>
         <form id="categoryForm">
+            <label for="categoryInput">Add a category:</label>
             <input type="text" id="categoryInput" class="input-box" placeholder="Enter category name">
-            <button type="submit" class="button">Add Category</button>
+            <button type="submit">Add Category</button>
         </form>
+        
+        </div>
+        <div id="expenses">
+            <h2>Expenses</h2>
+            <ul id="expenseList">
+
+            </ul>
+            <form id="expenseForm">
+                <label for="categorySelect">Category:</label>
+                <select id="categorySelect">
+                    <option value="">
+                        
+                    </option>
+                </select>
+                <label for="expenseInput">Amount:</label>
+                <input type="text" id="expenseInput" class="input-box" placeholder="Enter expense amount">
+                <button type="submit">Add Expense</button>
+            </form>
+
+            <button id="reportButton" class="button">Generate Report</button>
+        </div>
     </div>
-    <div id="expenses">
-        <h2>Expenses</h2>
-        <ul id="expenseList">
-            
-        </ul>
-        <form id="expenseForm">
-            <select id="categorySelect">
-                
-            </select>
-            <input type="number" id="expenseInput" class="input-box" placeholder="Enter expense amount">
-            <button type="submit" class="button">Add Expense</button>
-        </form>
-    </div>
-    </div>
+
     <footer class="footer">
         <ul class="social-media-list">
             <li class="social-media-item"><a href="#" class="social-media-link"><img src="./img/facebook-icon.png"
@@ -53,6 +64,7 @@
         </ul>
         <p class="footer-text">&copy; 2023 Expense Tracker. All rights reserved.</p>
     </footer>
+
     <script src="./script/main.js"></script>
-</body>
+  </body>
 </html>

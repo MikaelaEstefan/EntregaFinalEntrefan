@@ -46,7 +46,7 @@ function addCategory(e) {
 
 //----------------------------Add expense---------------------------//
 //-----------------------------------------------------------------//
-//1- Primero, evita el comportamiento predeterminado de enviar el formulario utilizando el método preventDefault() del objeto Event pasado como argumento a la función addExpense().
+//1- Primero, 'e.preventDefault()' evita que se envíe el formulario y se recargue la página.
 //2- Luego, obtiene el valor seleccionado del elemento de selección de categoría (categorySelect) y lo almacena en la variable category.//
 //3- Crea una nueva instancia de Date para obtener la fecha actual en formato de cadena utilizando el método toLocaleDateString(), y almacena el resultado en la variable date.//
 //4- Luego, obtiene el valor de la entrada de gasto (expenseInput), lo recorta y lo almacena en la variable amount.//

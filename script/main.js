@@ -9,28 +9,39 @@ const categorySelect = document.getElementById("categorySelect");
 const expenseInput = document.getElementById("expenseInput");
 const expenseList = document.getElementById("expenseList");
 
-// Add category (add category to the 'categories' array)
+// Add category (add category to the 'categories' array)//
+//-----------------------------------------------------//
+//1- 'e.preventDefault()' evita que se envíe el formulario y se recargue la página.
+//2- Obtiene el nombre de la categoría del campo de entrada, eliminando los espacios en blanco al principio y al final.
+//3- Verifica si el nombre de la categoría es válido (no está vacío). Si no es válido, muestra un mensaje de error y sale de la función.
+//4- Obtiene las categorías existentes de localStorage y las guarda en la variable categories. Si no hay categorías, se establece un arreglo vacío.
+//5- Agrega la nueva categoría al final del arreglo categories.
+//6- Actualiza las opciones del elemento de selección de categoría (un select) agregando una nueva opción con el valor y el texto establecidos como el nombre de la nueva categoría.
+//7- Agrega la nueva categoría a la lista como un elemento li.//
+//8- Muestra un mensaje de éxito con el nombre de la categoría agregada.//
+//10- Restablece el formulario para borrar el campo de entrada.//
+
 function addCategory(e) {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault(); 
     const categoryName = categoryInput.value.trim();
     if (categoryName === '') {
         showMessage('Please enter a valid category name.', 'error');
         return;
-    }
-    // Save the new category to the localStorage
+    } 
+
     categories = JSON.parse(localStorage.getItem('categories')) || [];
     categories.push(categoryName);
     localStorage.setItem('categories', JSON.stringify(categories));
 
-    // Update the options of the category select element
+   
     const option = document.createElement('option');
     option.value = categoryName;
     option.textContent = categoryName;
     categorySelect.appendChild(option);
 
-    categoryList.innerHTML += `<li>${categoryName}</li>`; // Add the new category to the list
+    categoryList.innerHTML += `<li>${categoryName}</li>`; 
     showMessage(`Category '${categoryName}' added successfully!`, 'success');
-    categoryForm.reset(); // Clear the input field
+    categoryForm.reset(); 
 }
 
 // Populate category select options

@@ -3,10 +3,10 @@
 
 /* Variables */
 :root {
-  --primary-color: #ffb3c6;
-  --secondary-color: #d6ffc2;
-  --tertiary-color: #ffffb7;
-  --text-color: #5d5d5d;
+  --primary-color: #414833;
+  --secondary-color: #c2c5aa;
+  --tertiary-color: #a4ac86;
+  --text-color: #3b3923;
 }
 
 /* Reset */
@@ -146,15 +146,15 @@ body {
 }
 
 #categoryForm button:hover {
-  background-color: #e36bb7;
+  background-color: #636e4e;
 }
 
 #expenseForm button:hover {
-    background-color: #e36bb7;
+    background-color: #636e4e;
 }
 
 #reportButton:hover {
-    background-color: #e36bb7;
+    background-color: #636e4e;
 }
 
 /* input elements */
@@ -238,4 +238,49 @@ input, #categorySelect {
     font-size: 14px;
     color:azure;
 }
-  
+ 
+.img-1 {
+   width: 50%;
+   box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+   margin-top: 15px;
+}
+
+.img-2 {
+    width: 70%;
+    box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+    margin-top: 15px;
+}
+
+.img-3 {
+    width: 70%;
+    box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+    margin-top: 15px;
+}
+
+.img-4 {
+    width: 30%;
+    box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+    margin-top: 15px;
+}
+
+.text-tutorial {
+    color: var(--text-color);
+    margin-top: 9px;
+    text-align: center;
+}
+
+.categories-text {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.categories-text-2 {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

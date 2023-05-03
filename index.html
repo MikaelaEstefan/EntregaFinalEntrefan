@@ -10,44 +10,47 @@
         <a href="#" class="navbar-logo">Expense Tracker</a>
         <ul class="navbar-nav">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+            <li class="nav-item"><a href="./pages/report.html" class="nav-link">Report</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Expenses</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Report</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <h1 class="title">Expense Tracker</h1>
-        <div id="categories">
-            <h2>Categories</h2>
-            <ul id="categoryList">
-
-            </ul>
-        <form id="categoryForm">
-            <label for="categoryInput">Add a category:</label>
-            <input type="text" id="categoryInput" class="input-box" placeholder="Enter category name">
-            <button type="submit">Add Category</button>
-        </form>
-        
+        <h1 class="title">Welcome to your new Expense Tracker!</h1>
+        <div class="categories-text">
+            <h2 class="title">Getting Started</h2>
+            <p class="text-tutorial">To get started, open the Expense Tracker by clicking on the <strong>Report</strong> link in the navbar.</p>
+            <img class="img-1" src="./img/screenshot1.png" alt="Report page screenshot">
         </div>
-        <div id="expenses">
-            <h2>Expenses</h2>
-            <ul id="expenseList">
+        
+        <div class="categories-text-2">
+            <h2 class="title">Adding Categories</h2>
+            <p class="text-tutorial">On the Report page, you will see a form to add new categories.</p>
+            <img class="img-2" src="./img/screenshot2.png" alt="Categories page screenshot">
+            <p class="text-tutorial">To add a new one, simply enter the name of the category in the <strong>Add a category</strong> input field and click on the <strong>Add Category</strong> button.</p>
+            <img class="img-3"  src="./img/screenshot3.png" alt="Add category form screenshot">
+            <p class="text-tutorial">The new category will be added to the list of categories, and you will see a success message at the bottom of the page.</p>
+            <img class="img-2" src="./img/screenshot4.png" alt="Category added screenshot">
+        </div>
 
-            </ul>
-            <form id="expenseForm">
-                <label for="categorySelect">Category:</label>
-                <select id="categorySelect">
-                    <option value="">
-                        
-                    </option>
-                </select>
-                <label for="expenseInput">Amount:</label>
-                <input type="text" id="expenseInput" class="input-box" placeholder="Enter expense amount">
-                <button type="submit">Add Expense</button>
-            </form>
+        <div class="categories-text-2">
+            <h2 class="title">Adding Expenses</h2>
+            <p class="text-tutorial">To add a new expense, select the category of the expense from the <strong>Category</strong> dropdown, enter the amount of the expense in the <strong>Amount</strong> input field, and click on the <strong>Add Expense</strong> button.</p>
 
-            <button id="reportButton" class="button">Generate Report</button>
+            <img class="img-2" src="./img/screenshot5.png" alt="Add expense form screenshot">
+
+            <p class="text-tutorial">The new expense will be added to the list of expenses for the selected category, and you will see a success message at the bottom of the page.</p>
+
+            <img class="img-2" src="./img/screenshot6.png" alt="Expense added screenshot">
+        </div>
+
+        <div class="categories-text-2">
+            <h2 class="title">Generating a Report</h2>
+            <p class="text-tutorial">To generate a report of your expenses, click on the <strong>Add Expense</strong> button.</p>
+            <img class="img-4" src="./img/screenshot7.png" alt="Report page screenshot">
+            <p class="text-tutorial">You will see a summary of your expenses for each category.</p>
+            <img class="img-2" src="./img/screenshot8.png" alt="Chart screenshot">
         </div>
     </div>
 
@@ -65,6 +68,5 @@
         <p class="footer-text">&copy; 2023 Expense Tracker. All rights reserved.</p>
     </footer>
 
-    <script src="./script/main.js"></script>
   </body>
 </html>

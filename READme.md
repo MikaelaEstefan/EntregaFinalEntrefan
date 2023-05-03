@@ -1,34 +1,34 @@
 ## Expense Tracker
 
-El objetivo de es poder generar reportes de gastos, pudiendo generar categorías y filtrar por fecha. 
-Las funcionalidad actuales son las siguientes:
+El objetivo de esta aplicación es permitir al usuario llevar un registro de sus gastos, con la posibilidad de agregar categorías y filtrar por fecha. 
+
+### Funcionalidades
+
+Las funcionalidades son las siguientes:
 
 - Añadir nueva categoría
-- Añadir gastos a esa categoría
-- Mostrar gasto por categoría
-- Filtrar gastos por fecha. 
+- Añadir gastos a una categoría
+- Mostrar gastos por categoría
+- Mostrar reporte de gastos
 
 ### Cómo usarlo
 
-- El prompt inicial muestra un menú general con opciones para acceder a las funcionalidades:
-
-1. Add Category
-2. Add Expense
-3. Show Expense Report
-4. Filter Expenses by Date
-5. Exit
-
-Siguiendo las opciones en el orden que figura es posible: agregar nueva categoría, agregarle un gasto, mostrar el reporte y filtrar gastos por fecha. 
+1. Agrega una nueva categoría utilizando el formulario provisto. 
+2. Agrega un gasto a una categoría seleccionando la categoría y completando los detalles del gasto. 
+3. Muestra los gastos por categoría seleccionando una categoría de la lista desplegable. 
+4. Muestra un reporte de gastos haciendo clic en el botón "Generar Reporte". 
 
 ### Código
 
-Consiste de las siguientes funciones:
+El código JavaScript de la aplicación utiliza dos arrays diferentes, `categories` y `expenses`, para almacenar la información de las categorías y los gastos respectivamente. 
 
-- `addCategory()`: Agrega una nueva categoría a la lista. 
-- `addExpense()`: Agrega un nuevo gasto. 
-- `showExpenseReport()`: Muestra reporte por categoría. 
-- `filterExpensesByDate()`: Filtra gastos por fecha. 
+Las siguientes funciones están disponibles:
 
-Estas funciones son llamadas desde la función `showMainMenu()` que muestra el menú y permite al usuario navegar las opciones disponibles. 
+- `addCategory()`: Agrega una nueva categoría al array `categories`.
+- `addExpense()`: Agrega un nuevo gasto al array `expenses`.
+- `showExpenseByCategory()`: Muestra los gastos de una categoría específica.
+- `showReport()`: Muestra un reporte de gastos.
 
-La lista de categorías y los gastos se guardan en 2 arrays diferentes: `categories` y `expenses`.
+Estas funciones son llamadas desde los event listeners de los botones y formularios de la aplicación. 
+
+Además, la aplicación utiliza `localStorage` para almacenar las categorías, lo que permite que la información de las categorías se conserve incluso después de que el usuario haya cerrado la aplicación. 

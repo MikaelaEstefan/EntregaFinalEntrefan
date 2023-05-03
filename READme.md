@@ -24,7 +24,7 @@ Las siguientes funciones están disponibles:
 
 - `addCategory()`: Agrega una nueva categoría al array `categories`.
 - `addExpense()`: Agrega un nuevo gasto al array `expenses`.
-- `showMessage()`: Crea un div que permite visualizar los mensajes correctamente. 
+- `showMessage()`: Crea un nuevo elemento div que permite visualizar los mensajes correctamente. 
 - `populateCategories()`: Crea una opción seleccionable en la sección de expenses por cada categoría    agregada.
 - `showReport()`: Muestra el reporte de gastos.
 

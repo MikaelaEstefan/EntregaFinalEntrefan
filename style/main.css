@@ -243,24 +243,28 @@ input, #categorySelect {
    width: 50%;
    box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
    margin-top: 15px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .img-2 {
     width: 70%;
     box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
     margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .img-3 {
     width: 70%;
     box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
     margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .img-4 {
     width: 30%;
     box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
     margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .text-tutorial {

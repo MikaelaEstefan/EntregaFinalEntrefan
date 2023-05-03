@@ -1,6 +1,6 @@
 ## Expense Tracker
 
-El objetivo de esta aplicación es permitir al usuario llevar un registro de sus gastos, con la posibilidad de agregar categorías y filtrar por fecha. 
+El objetivo de esta aplicación es permitir al usuario llevar un registro de sus gastos, con la posibilidad de agregar categorías y generar un reporte. 
 
 ### Funcionalidades
 
@@ -8,15 +8,13 @@ Las funcionalidades son las siguientes:
 
 - Añadir nueva categoría
 - Añadir gastos a una categoría
-- Mostrar gastos por categoría
-- Mostrar reporte de gastos
+- Mostrar reporte de gastos por categoría
 
 ### Cómo usarlo
 
 1. Agrega una nueva categoría utilizando el formulario provisto. 
 2. Agrega un gasto a una categoría seleccionando la categoría y completando los detalles del gasto. 
-3. Muestra los gastos por categoría seleccionando una categoría de la lista desplegable. 
-4. Muestra un reporte de gastos haciendo clic en el botón "Generar Reporte". 
+3. Muestra un reporte de gastos haciendo clic en el botón "Generar Reporte". 
 
 ### Código
 
@@ -26,8 +24,9 @@ Las siguientes funciones están disponibles:
 
 - `addCategory()`: Agrega una nueva categoría al array `categories`.
 - `addExpense()`: Agrega un nuevo gasto al array `expenses`.
-- `showExpenseByCategory()`: Muestra los gastos de una categoría específica.
-- `showReport()`: Muestra un reporte de gastos.
+- `showMessage()`: Crea un div que permite visualizar los mensajes correctamente. 
+- `populateCategories()`: Crea una opción seleccionable en la sección de expenses por cada categoría    agregada.
+- `showReport()`: Muestra el reporte de gastos.
 
 Estas funciones son llamadas desde los event listeners de los botones y formularios de la aplicación. 
 

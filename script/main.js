@@ -44,6 +44,18 @@ function addCategory(e) {
     categoryForm.reset(); 
 }
 
+//---------------Agregar las categorias agregadas a las options-------------------//
+//-------------------------------------------------------------------------------//
+window.addEventListener('load', () => {
+    categories = JSON.parse(localStorage.getItem('categories')) || [];
+    categories.forEach(category => {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category;
+        categorySelect.appendChild(option);
+    });
+});
+
 //----------------------------Add expense---------------------------//
 //-----------------------------------------------------------------//
 //1- Primero, 'e.preventDefault()' evita que se envíe el formulario y se recargue la página.

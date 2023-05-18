@@ -226,8 +226,8 @@ function generateReport() {
       options: {
         responsive: true,
       },
-    });
-  }
+    });  
+}
 
 
 //------Event listeners------//

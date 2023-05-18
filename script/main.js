@@ -163,38 +163,72 @@ function populateCategories() {
     });
 }
 
-//---------------------------ShowReport-----------------------------//
-//-----------------------------------------------------------------//
-//1- La función comienza verificando si la cantidad de categorías y gastos es cero. Si es así, muestra un mensaje de error y sale de la función.//
-//2- Si hay categorías y gastos, la función crea un objeto vacío llamado report.//
-//3- Luego, la función recorre cada uno de los gastos y para cada uno de ellos:
-//   a. Obtiene la categoría del gasto y su cantidad en forma de número.
-//   b. Verifica si la categoría ya está en el objeto report. Si es así, agrega el monto al valor existente para esa categoría. Si no, agrega una nueva propiedad al objeto report con la categoría y su monto.//
-//5- Después de recorrer todos los gastos, la función crea una cadena de texto vacía llamada reportText.//
-//6- La función usa el método Object.entries() para recorrer todas las propiedades del objeto report. Para cada propiedad, se crea una cadena de texto con el nombre de la categoría y el monto total, y se agrega a la cadena reportText.//
-//7- Finalmente, la función muestra la cadena de texto reportText utilizando la función showMessage().//
 
-function showReport() {
-    if (categories.length === 0 || expenses.length === 0) {
-        showMessage('Please add categories and expenses first.', 'error');
-        return;
-    }
-    const report = {};
-    expenses.forEach(expense => {
-        const category = expense.category;
-        const amount = parseFloat(expense.amount);
-        if (report[category]) {
-            report[category] += amount;
-        } else {
-            report[category] = amount;
-        }
+// function showReport() {
+//     if (categories.length === 0 || expenses.length === 0) {
+//         showMessage('Please add categories and expenses first.', 'error');
+//         return;
+//     }
+//     const report = {};
+//     expenses.forEach(expense => {
+//         const category = expense.category;
+//         const amount = parseFloat(expense.amount);
+//         if (report[category]) {
+//             report[category] += amount;
+//         } else {
+//             report[category] = amount;
+//         }
+//     });
+//     let reportText = '';
+//     Object.entries(report).forEach(([category, amount]) => {
+//         reportText += `${category}: $${amount.toFixed(2)}\n`;
+//     });
+//     showMessage(reportText, 'success');
+// }
+
+// const reportContainer = document.getElementById('reportContainer');
+// const reportButton = document.getElementById('reportButton');
+
+
+function generateReport() {
+    // Crear objeto donde guardar los totales de cada categoria
+    const categoryTotals = {};
+  
+    // Calcular el total de cada categoria
+    expenses.forEach((expense) => {
+      const category = expense.category;
+      const amount = parseFloat(expense.amount);
+  
+      if (categoryTotals[category]) {
+        categoryTotals[category] += amount;
+      } else {
+        categoryTotals[category] = amount;
+      }
     });
-    let reportText = '';
-    Object.entries(report).forEach(([category, amount]) => {
-        reportText += `${category}: $${amount.toFixed(2)}\n`;
+  
+    // Chart canva
+    const chartCanvas = document.getElementById('reportChart');
+  
+    // Extraer los nombres y cantidades para la chart
+    const categories = Object.keys(categoryTotals);
+    const amounts = Object.values(categoryTotals);
+  
+    // Crear la chart
+    new Chart(chartCanvas, {
+      type: 'pie',
+      data: {
+        labels: categories,
+        datasets: [{
+          data: amounts,
+          backgroundColor: ['#414833', '#b3ab8c', '#867f54', '#3b3923', '#6d6d6d'],
+        }],
+      },
+      options: {
+        responsive: true,
+      },
     });
-    showMessage(reportText, 'success');
-}
+  }
+
 
 //------Event listeners------//
 //--------------------------//
@@ -204,5 +238,5 @@ document.addEventListener('DOMContentLoaded', () => {
     populateCategories();
     document.getElementById('reportButton').addEventListener('click', showReport);
 });
-
+reportButton.addEventListener('click', generateReport);
 

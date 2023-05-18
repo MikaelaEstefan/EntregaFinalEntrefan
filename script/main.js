@@ -25,7 +25,17 @@ function addCategory(e) {
     e.preventDefault(); 
     const categoryName = categoryInput.value.trim();
     if (categoryName === '') {
-        showMessage('Please enter a valid category name.', 'error');
+        //---Sweet Alert---//
+        //----------------//
+        Swal.fire({
+            title: 'Please enter a valid category name.',
+            icon: 'error',
+            iconColor: '#414833',
+            background: '#c2c5aa',
+            color: '#3b3923',
+            showConfirmButton: false, 
+            timer: 2000
+        });
         return;
     } 
 
@@ -40,7 +50,17 @@ function addCategory(e) {
     categorySelect.appendChild(option);
 
     categoryList.innerHTML += `<li>${categoryName}</li>`; 
-    showMessage(`Category '${categoryName}' added successfully!`, 'success');
+    //---Sweet Alert---//
+    //----------------//
+        Swal.fire({
+            title: `Category '${categoryName}' added successfully!`,
+            icon: 'success',
+            iconColor: '#414833',
+            background: '#c2c5aa',
+            color: '#3b3923',
+            showConfirmButton: false, 
+            timer: 2000
+        });
     categoryForm.reset(); 
 }
 
@@ -75,7 +95,17 @@ function addExpense(e) {
     const date = new Date().toLocaleDateString();
     const amount = expenseInput.value.trim();
     if (category === '' || amount === '') {
-        showMessage('Please select a category and enter a valid expense amount.', 'error');
+        //---Sweet Alert---//
+        //----------------//
+        Swal.fire({
+            title: 'Please select a category and enter a valid expense amount.',
+            icon: 'error',
+            iconColor: '#414833',
+            background: '#c2c5aa',
+            color: '#3b3923',
+            showConfirmButton: false, 
+            timer: 2000
+        });
         return;
     }
     const expense = {
@@ -85,7 +115,17 @@ function addExpense(e) {
     };
     expenses.push(expense);
     expenseList.innerHTML += `<li>${category} - ${date} - ${amount}</li>`; 
-    showMessage('Expense added successfully.', 'success');
+   //---Sweet Alert---//
+   //----------------//
+   Swal.fire({
+    title: 'Expense added successfully!',
+    icon: 'success',
+    iconColor: '#414833',
+    background: '#c2c5aa',
+    color: '#3b3923',
+    showConfirmButton: false, 
+    timer: 2000
+  });
     expenseForm.reset(); 
 }
 

@@ -15,51 +15,19 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h1 class="title">Expense Tracker</h1>
-        <div id="categories">
-            <h2>Categories</h2>
-            <ul id="categoryList">
+    <div id="contactContainer">
+        <h1>Contact us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>    
+    </div>  
 
-            </ul>
-            <form id="categoryForm">
-                <label for="categoryInput">Add a category:</label>
-                <input type="text" id="categoryInput" class="input-box" placeholder="Enter category name">
-                <button type="submit">Add Category</button>
-            </form>
-        
-        </div>
-        <div id="expenses">
-            <h2>Expenses</h2>
-            <ul id="expenseList">
-
-            </ul>
-            <form id="expenseForm">
-                <label for="categorySelect">Category:</label>
-                <select id="categorySelect">
-                    <option value="">
-                        
-                    </option>
-                </select>
-                <label for="expenseInput">Amount:</label>
-                <input type="text" id="expenseInput" class="input-box" placeholder="Enter expense amount">
-                <button type="submit">Add Expense</button>
-            </form>
-
-            <button id="reportButton" class="button">Generate Report</button>
-        </div>
-
-        <div id="reportContainer">
-        <h2>Expense Report</h2>
-        <canvas id="reportChart">
-
-        </canvas>
-        </div>
-
-
-    </div>
-
-    
 
     <footer class="footer">
         <ul class="social-media-list">
@@ -75,8 +43,9 @@
         <p class="footer-text">&copy; 2023 Expense Tracker. All rights reserved.</p>
     </footer>
 
-    <script src="../script/main.js"></script>
+    <script src="../script/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>

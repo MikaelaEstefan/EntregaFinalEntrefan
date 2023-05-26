@@ -21,7 +21,7 @@ Las funcionalidades son las siguientes:
 2. Agregar gastos a una categoría:
 
 - Selecciona una categoría de la lista desplegable.
-- Completa los detalles del gasto, como la descripción y el monto.
+- Agrega el monto.
 - Haz clic en el botón "Agregar gasto" para registrar el gasto en la categoría seleccionada.
 - El gasto se añadirá a la lista de gastos asociados a la categoría.
 

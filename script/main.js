@@ -163,33 +163,6 @@ function populateCategories() {
     });
 }
 
-
-// function showReport() {
-//     if (categories.length === 0 || expenses.length === 0) {
-//         showMessage('Please add categories and expenses first.', 'error');
-//         return;
-//     }
-//     const report = {};
-//     expenses.forEach(expense => {
-//         const category = expense.category;
-//         const amount = parseFloat(expense.amount);
-//         if (report[category]) {
-//             report[category] += amount;
-//         } else {
-//             report[category] = amount;
-//         }
-//     });
-//     let reportText = '';
-//     Object.entries(report).forEach(([category, amount]) => {
-//         reportText += `${category}: $${amount.toFixed(2)}\n`;
-//     });
-//     showMessage(reportText, 'success');
-// }
-
-// const reportContainer = document.getElementById('reportContainer');
-// const reportButton = document.getElementById('reportButton');
-
-
 function generateReport() {
     // Crear objeto donde guardar los totales de cada categoria
     const categoryTotals = {};
@@ -206,14 +179,14 @@ function generateReport() {
       }
     });
   
-    // Chart canva
+    //---Chart---//
     const chartCanvas = document.getElementById('reportChart');
   
-    // Extraer los nombres y cantidades para la chart
+    //---Extraer los nombres y cantidades para la chart---//
     const categories = Object.keys(categoryTotals);
     const amounts = Object.values(categoryTotals);
   
-    // Crear la chart
+    //--Crear la chart--/7
     new Chart(chartCanvas, {
       type: 'pie',
       data: {

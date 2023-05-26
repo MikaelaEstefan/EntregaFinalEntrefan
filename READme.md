@@ -12,9 +12,23 @@ Las funcionalidades son las siguientes:
 
 ### Cómo usarlo
 
-1. Agrega una nueva categoría utilizando el formulario provisto. 
-2. Agrega un gasto a una categoría seleccionando la categoría y completando los detalles del gasto. 
-3. Muestra un reporte de gastos haciendo clic en el botón "Generar Reporte". 
+1. Agregar una nueva categoría:
+
+- Completa el formulario proporcionado con el nombre de la categoría.
+- Haz clic en el botón "Agregar categoría" para añadir la categoría al registro.
+- La categoría se mostrará en la lista de categorías disponibles.
+
+2. Agregar gastos a una categoría:
+
+- Selecciona una categoría de la lista desplegable.
+- Completa los detalles del gasto, como la descripción y el monto.
+- Haz clic en el botón "Agregar gasto" para registrar el gasto en la categoría seleccionada.
+- El gasto se añadirá a la lista de gastos asociados a la categoría.
+
+3. Mostrar un reporte de gastos:
+
+- Haz clic en el botón "Generar reporte" para ver un informe de gastos por categoría.
+- El informe se presentará en forma de gráfico, mostrando los montos totales de gastos por categoría.
 
 ### Código
 
@@ -31,3 +45,9 @@ Las siguientes funciones están disponibles:
 Estas funciones son llamadas desde los event listeners de los botones y formularios de la aplicación. 
 
 Además, la aplicación utiliza `localStorage` para almacenar las categorías, lo que permite que la información de las categorías se conserve incluso después de que el usuario haya cerrado la aplicación. 
+
+La aplicación utiliza las siguientes librerías:
+
+- SweetAlert para mostrar mensajes de éxito y error.
+- Chart.js para generar el gráfico de gastos por categoría en el informe.
+

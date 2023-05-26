@@ -163,11 +163,17 @@ function populateCategories() {
     });
 }
 
+//-------------generateReport----------------//
+//------------------------------------------//
+//1-Se crea un objeto vacío ´categoryTotals´ donde se van a guardar los totales de cada categoría.//
+//2- Se itera sobre el array expenses, que contiene los gastos. Para cada gasto, se realiza lo siguiente:
+//a. Se obtiene la categoría del gasto utilizando expense.category. //
+//b. Se obtiene el monto del gasto y se convierte a un número decimal utilizando parseFloat(expense.amount). //
+//c. Se verifica si la categoría ya existe en categoryTotals. Si existe, se suma el monto actual al total existente. Si no existe, se crea la categoría en categoryTotals y se asigna el monto actual. //
+
 function generateReport() {
-    // Crear objeto donde guardar los totales de cada categoria
     const categoryTotals = {};
   
-    // Calcular el total de cada categoria
     expenses.forEach((expense) => {
       const category = expense.category;
       const amount = parseFloat(expense.amount);

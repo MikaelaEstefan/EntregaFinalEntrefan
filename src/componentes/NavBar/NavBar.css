@@ -1,0 +1,36 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: #c0c0c0;
+    padding: 1rem;
+}
+
+.logoSW {
+    width: 20%;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    font-size: 20px;
+    margin: 18px;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color: #808080;
+}

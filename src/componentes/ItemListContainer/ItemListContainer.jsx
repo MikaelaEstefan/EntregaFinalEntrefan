@@ -7,7 +7,7 @@ import { db } from '../../services/firebaseConfig'
 
 const ItemListContainer = ({greeting}) => {
 
-  const [productos, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true)
 
   const { categoryId } = useParams();
@@ -41,7 +41,7 @@ const ItemListContainer = ({greeting}) => {
             <h2 style={{ textAlign: "center" }}> 
             {greeting}
             Mis productos </h2>
-            <ItemList productos={productos} />
+            <ItemList productos={products} />
         </>
     )
 }

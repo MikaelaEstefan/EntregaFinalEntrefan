@@ -1,8 +1,9 @@
+import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer"
-import NavBar from "./componentes/NavBar/NavBar"
-import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer"
-import Cart from './componentes/Cart/Cart'
+import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import NavBar from "./componentes/NavBar/NavBar";
+import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
+import Cart from './componentes/Cart/Cart';
 import { CartProvider } from './context/CartContext'; 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
       </CartProvider>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -2,18 +2,18 @@ import './ItemDetail.css'
 import { useContext, useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
-import { CartContext } from '../../context/CartContext'
+import { CarritoContext } from '../../context/CartContext' 
 
-const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+const ItemDetail = ({ id, nombre, img, category, description, precio, stock }) => {
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const { addItem} = useContext(CartContext)
+    const {addItem} = useContext(CarritoContext)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, name, price
+            id, nombre, precio
         }
 
         addItem(item, quantity)
@@ -23,10 +23,10 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     return (
         <article className='contenedorItem'>
             <header>
-                <h2>Nombre: {name} </h2>
+                <h2>Nombre: {nombre} </h2>
             </header>
             <picture>
-                <img src={img} alt={name} />
+                <img src={img} alt={nombre} />
             </picture>
             <section>
                 <p className='Info'>
@@ -36,7 +36,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     Descripción: {description}
                 </p>
                 <p className='Info'>
-                    Precio:{price}
+                    Precio:{precio}
                 </p>
                 <h3>ID: {id} </h3>
             </section>
@@ -45,7 +45,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     quantityAdded > 0 ? (
                         <Link to='/cart' className='Option'> Terminar Compra</Link>
                     ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/> 
+                        <ItemCount initial={1} stock={10} funcionAgregar={handleOnAdd} /> 
                     )
                 }
             </footer>

@@ -6,31 +6,64 @@
 }
 
 header {
+    background-color: #8a8989;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    background-color: #c0c0c0;
-    padding: 1rem;
+    padding: 10px;
 }
-
+  
+  
 .logoSW {
-    width: 20%;
+    width: 100px;
+    height: 100px;
 }
+  
 
-
+nav {
+    flex: 1;
+}
+  
 ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    margin-right: 20px;
+}
+  
+ 
+a {
+    text-decoration: none;
+    color: rgb(62, 104, 50);
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+  
+a:hover {
+    color: #ffc107; 
+}
+  
+  
+a.active {
+    color: #ffc107; 
 }
 
-li {
-    font-size: 20px;
-    margin: 18px;
-    font-weight: bold;
-    list-style: none;
-    cursor: pointer;
-    margin-left: 1rem;
-    text-transform: uppercase;
-    color: #808080;
+.cart-widget {
+    position: relative;
+}
+  
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ff5722; 
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 14px;
 }

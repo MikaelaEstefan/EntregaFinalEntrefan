@@ -5,8 +5,13 @@
     margin: 0;
 }
 
+body {
+    background-color: #edede9;
+    color: #343a40;
+}
+
 header {
-    background-color: #8a8989;
+    background-color: #e3d5ca;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -26,26 +31,26 @@ nav {
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content:end;
     margin: 0;
     padding: 0;
 }
   
 li {
-    margin-right: 20px;
+    margin-right: 5%;
 }
   
  
 a {
     text-decoration: none;
-    color: rgb(62, 104, 50);
-    font-size: 18px;
+    color: #826f7f;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.2s;
 }
   
 a:hover {
-    color: #ffc107; 
+    color: #9a8c98; 
 }
   
   

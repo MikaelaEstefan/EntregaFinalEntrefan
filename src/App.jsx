@@ -15,7 +15,7 @@ const App = () => {
       <NavBar/>
       <Routes>
       {/* <ItemListContainer greeting = {"Step into a Galaxy Far, Far Away and Explore Our Star Wars Universe!"}/> */}
-          <Route path='/' element={ <ItemListContainer greeting={'Todos nuestros productos'}/> } />
+          <Route path='/' element={ <ItemListContainer/> } />
           <Route path='/categoria/:idCategoria' element={ <ItemListContainer greeting={'Productos por categoria'}/> }/>
           <Route path='/item/:idItem' element = { <ItemDetailContainer/> } />
           <Route path='/cart' element={<Cart />} />

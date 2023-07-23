@@ -38,7 +38,7 @@ export const CarritoProvider = ({children}) => {
         }
     }
 
-    //Función para eliminar productos del carrito: 
+  
 
     const eliminarProducto = (id) => {
         const productoEliminado = carrito.find( prod => prod.item.id === id);
@@ -48,7 +48,7 @@ export const CarritoProvider = ({children}) => {
         setTotal(prev => prev - (productoEliminado.item.precio * productoEliminado.cantidad));
     }
 
-    //Función para vaciar el carrito de compras: 
+  
 
     const vaciarCarrito = () => {
         setCarrito([]);

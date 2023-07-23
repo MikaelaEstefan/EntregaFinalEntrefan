@@ -39,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
     <>
       <h2 style={{ textAlign: 'center' }}>
         {greeting}
-        Mis productos
+        Todos nuestros productos
       </h2>
       {loading ? <p>Loading...</p> : <ItemList productos={productos} />}
     </>

@@ -7,14 +7,14 @@ import { db } from '../../services/firebaseConfig';
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { categoryId } = useParams();
+  const { idCategoria } = useParams();
 
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        const collectionRef = categoryId
-          ? query(collection(db, 'products'), where('category', '==', categoryId))
+        const collectionRef = idCategoria
+          ? query(collection(db, 'products'), where('Category', '==', Number(idCategoria)))
           : collection(db, 'products');
 
         const querySnapshot = await getDocs(collectionRef);
@@ -33,7 +33,7 @@ const ItemListContainer = ({ greeting }) => {
     };
 
     fetchProducts();
-  }, [categoryId]);
+  }, [idCategoria]);
 
   return (
     <>
